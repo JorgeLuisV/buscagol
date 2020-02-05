@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Jorge Luis Vásquez">
+  <meta name="description" content="Applicación móvil para reservar canchas y plataforma web para administrar tu establecimiento deportivo. Desarrolla tu pasión por tu deporte favorito." />
+  <title>Buscagol | Reserva canchas, administra tu negocio</title>
+  <link rel="icon" href="./public/images/imagoo.png" type="image" sizes="16x16">
+
+  <meta property="og:title" content="Buscagol | Reserva canchas, administra tu negocio">
+  <meta property="og:description" content="Mejora tu experiencia como jugador o como administrador de tu establecimiento deportivo. Reservar una cancha ahora es más fácil, gestionar y monitorear tu negocio también.">
+  <meta property="og:image" content="https://buscagol.com/public/images/img-social.png">
+  <meta property="og:url" content="https://buscagol.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:site_name" content="Buscagol">
+  <meta name="twitter:image:alt" content="Plataforma de reservas y administración de establecimientos deportivos Buscagol">
+
+  <script type="application/ld+json">
+    [ {
+      "@context" : "http://schema.org",
+      "@type" : "SoftwareApplication",
+      "name" : "Buscagol",
+      "description": "Applicación móvil para reservar canchas y plataforma web para administrar tu establecimiento deportivo. Desarrolla tu pasión por tu deporte favorito."
+      "url":"http://buscagol.esy.es",
+      "email":"buscagol10@gmail.com",
+      "image" : "https://buscagol.com/public/images/smartphone.png",
+      "author" : {
+        "@type" : "Organization",
+        "name" : "Buscagol"
+      },
+      "downloadUrl" : "https://play.google.com/store/apps/details?id=pe.com.cricketsoft.buscagolv3",
+      "operatingSystem" : "Android",
+      "softwareVersion" : "1.0",
+      "aggregateRating" : {
+        "@type" : "AggregateRating",
+        "ratingValue" : "4.5"
+      }
+      "review" : {
+        "@type" : "Review",
+        "reviewBody" : "Buscagol es un sistema creado para mejorar tu experiencia como deportista entusiasta o como administrador de tu establecimiento deportivo."
+      }
+    }, {
+      "@context" : "http://schema.org",
+      "@type" : "SoftwareApplication",
+      "name" : "Buscagol",
+      "description": "Applicación móvil para reservar canchas y plataforma web para administrar tu establecimiento deportivo. Desarrolla tu pasión por tu deporte favorito."
+      "url":"http://buscagol.esy.es",
+      "email":"buscagol10@gmail.com",
+      "image" : "https://buscagol.com/public/images/smartphone.png",
+      "author" : {
+        "@type" : "Organization",
+        "name" : "Buscagol"
+      },
+      "downloadUrl" : "https://play.google.com/store/apps/details?id=pe.com.cricketsoft.buscagolv3",
+      "operatingSystem" : "Android",
+      "screenshot" : "https://buscagol.com/public/images/app1.png",
+      "softwareVersion" : "1.0",
+      "aggregateRating" : {
+        "@type" : "AggregateRating",
+        "ratingValue" : "4.5"
+      }
+      "review" : {
+        "@type" : "Review",
+        "reviewBody" : "Queremos simplificar la forma de organizar tus tardes de deporte con tus amigos. Encuentra canchas cerca de ti, consulta sus horarios, arma tu equipo y juega"
+      }
+    }, {
+      "@context" : "http://schema.org",
+      "@type" : "SoftwareApplication",
+      "name" : "Buscagol",
+      "description": "Applicación móvil para reservar canchas y plataforma web para administrar tu establecimiento deportivo. Desarrolla tu pasión por tu deporte favorito."
+      "url":"http://buscagol.esy.es",
+      "email":"buscagol10@gmail.com",
+      "image" : "https://buscagol.com/public/images/smartphone.png",
+      "author" : {
+        "@type" : "Organization",
+        "name" : "Buscagol"
+      },
+      "downloadUrl" : "https://play.google.com/store/apps/details?id=pe.com.cricketsoft.buscagolv3",
+      "operatingSystem" : "Android",
+      "screenshot" : "https://buscagol.com/public/images/patform1.png",
+      "softwareVersion" : "1.0",
+      "aggregateRating" : {
+        "@type" : "AggregateRating",
+        "ratingValue" : "4.5"
+      }
+      "review" : {
+        "@type" : "Review",
+        "reviewBody" : "La plataforma web de Buscagol te proporciona herramientas para que puedas administrar y monitorear las áreas en tu negocio. Agiliza tus procesos y toma mejores decisiones."
+      }
+    } ]
+  </script>
+
+  <link rel="stylesheet" href="./public/bootstrap-4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/animate.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="./public/plugins/node-waves/waves.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="loader-cont">
+    <div>
+      <div class="loader-imago">
+        <img src="./public/images/imagoo.png">
+        <h1>Buscagol</h1>
+      </div>
+      <div class="la-ball-fall la-2x">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav-bg d-none">
+    <a class="nav-ibtn x">
+      <div class="navicon"></div>
+    </a>
+    <div class="nav-btn"></div>
+    
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li><a class="link" href="#home">Inicio</a></li>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="bg-header">
+    <div class="bg-cover"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="app-img" src="./public/images/smartphone.png" alt="Buscagol app">
+        </div>
+        <div class="col-sm-6">
+          <div class="text-cont">
+            <div class="iso-cont">
+              <img class="d-block d-sm-none" src="./public/images/imagoo.png" alt="Buscagol isotipo">
+              <img class="d-none d-sm-block" src="./public/images/imagow.png" alt="Buscagol isotipo">
+              <h1>Buscagol</h1>
+              <span class="align-text-bottom d-none d-sm-block">V 1.0</span>
+            </div>
+            <div class="bg-text">
+              <ul class="ct-box">
+                <li><a href="javascript:void(0)">Administrar tus canchas</a></li>
+                <li><a href="javascript:void(0)">Organizar una pichanga</a></li>
+              </ul>
+              ahora es más fácil
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section-cont">
+    <div class="container">
+      <div class="sec-header text-center">
+        <span>ACERCA DE</span>
+        <h2>¿Qué es Buscagol?</h2>
+        <p>Buscagol es un sistema creado para mejorar tu experiencia como deportista entusiasta o como administrador de tu establecimiento deportivo.</p>
+      </div>
+      <div class="row">
+        <div class="platform-desc">
+          <div class="col-12 col-md-7 col-lg-8 screenshots">
+            <img class="platform-img d-none d-sm-block wow bounceInLeft animated" data-wow-delay=".2s" src="./public/images/app2.png" alt="Buscagol app menu">
+            <img class="platform-img wow bounceInLeft animated" data-wow-delay=".6s" src="./public/images/app1.png" alt="Buscagol app menu">
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 vcenter">
+            <div class="about-text">
+              <h3 class="about-subtitle">Desarrolla tu pasión por tu deporte favorito</h3>
+              <p>Queremos simplificar la forma de organizar tus tardes de deporte con tus amigos. Encuentra canchas cerca de ti, consulta sus horarios, arma tu equipo y juega.</p>
+            </div>
+          </div>
+        </div>
+        <div class="platform-desc mb-5 box-reverse">
+          <div class="col-12 col-md-7 col-lg-8 screenshots">
+            <img class="platform-img sweb d-none d-sm-block wow bounceInRight animated" data-wow-delay=".2s" src="./public/images/patform2.png" alt="Buscagol plataforma web">
+            <img class="platform-img sweb wow bounceInRight animated" data-wow-delay=".6s" src="./public/images/patform1.png" alt="Buscagol plataforma web">
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 vcenter">
+            <div class="about-text">
+              <h3 class="about-subtitle">Ten un mejor control sobre tu negocio</h3>
+              <p>La plataforma web de Buscagol te proporciona herramientas para que puedas administrar y monitorear las áreas en tu negocio. Agiliza tus procesos y toma mejores decisiones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="section-cont">
+    <div class="container">
+      <div class="sec-header benefits">
+        <span>BEBEFICIOS</span>
+        <h2>Para Jugadores</h2>
+      </div>
+      <div class="row cards-container">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".2s">
+            <i class="fas fa-search"></i>
+            <h3 class="about-subtitle">Descubre canchas</h3>
+            <p>Localiza estalecimientos cerca de ti o en el lugar que quieras através de geolocalización, encuentra tu establecimiento favorito.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".6s">
+            <i class="fas fa-clock"></i>
+            <h3 class="about-subtitle">Consulta horarios</h3>
+            <p>Visualiza los horarios disponibles y de atención de cada establecimiento en tiempo real, olvídate de los cruces de horario.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay="1s">
+            <i class="fas fa-user-ninja"></i>
+            <h3 class="about-subtitle">Conoce personas</h3>
+            <p>Si tu equipo no está completo podrás hacer público tu encuentro para que nuevos jugadores se unan o también enviar invitaciones.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec-header benefits">
+        <h2>Para Establecimientos</h2>
+      </div>
+      <div class="row cards-container mb-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".2s">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3 class="about-subtitle">Interfaz intuitiva</h3>
+            <p>Fácil de operar e implementar, la plataforma no requiere de instalación, sólo regístrate y empieza a usarla.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".6s">
+            <i class="fas fa-shield-alt"></i>
+            <h3 class="about-subtitle">Seguridad garantizada</h3>
+            <p>Velamos por la integridad y confidencialidad de tus datos, accede a ellos en el momento y lugar que quieras.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay="1s">
+            <i class="fas fa-cogs"></i>
+            <h3 class="about-subtitle">Administra tus reservas</h3>
+            <p>Olvídate de los registros en papel, optimiza el registro y atención de tus reservas a través de la plataforma.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".4s">
+            <i class="fas fa-bullhorn"></i>
+            <h3 class="about-subtitle">Difunde tu negocio</h3>
+            <p>A través de la app móvil podrás llegar a más clientes que están busca de descubrir tu establecimiento deportivo.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="bcard wow flipInY animated" data-wow-delay=".8s">
+            <i class="fas fa-chart-line"></i>
+            <h3 class="about-subtitle">Monitorea tus finanzas</h3>
+            <p>La plataforma te provee de datos estadísticos para que puedas analizar el crecimiento de tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-cont pb-4">
+    <div class="container">
+      <div class="sec-header text-center">
+        <span>CONTACTO</span>
+        <h2>Envíanos un mensaje</h2>
+        <p>Si tienes alguna consulta o sugerencia no dudes en escribirnos, estamos dispuestos a ayudarte.</p>
+      </div>
+
+      <form id="contact-form" autocomplete="off" class="wow fadeInUp animated" data-wow-delay=".2s"">
+        <div class="form-row">
+          <div class="col-12 col-md-6 inputs-cont">
+            <div class="form-group">
+              <input type="text" class="form-control" id="names" name="names" placeholder="Nombres" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Correo" required>
+            </div>
+          </div>
+          <div class="inputs-cont col-12 col-md-6">
+            <div class="form-group">
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldt2WAUAAAAAF8qoAUcZfQptH23werDdLEq9sEb" data-callback="sendEmail" data-size="invisible"></div>
+        <div class="button-cont">
+          <button type="submit" class="btn bg-btnoutline">
+            <span>Enviar</span>
+            <div class="wait la-ball-fall d-none">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <div class="bg-footer">
+    <div class="footer-copy">
+      <small>Buscagol © <span></span></small>
+    </div>
+    <img src="./public/images/svg-bottom.svg">
+    <div class="footer-cont"></div>
+  </div>
+
+  <footer class="foo-bg d-none">
+    <div class="cta-bg cta-shadow">
+      <ul class="cta-btns">
+        <li>
+          <a class="btn-wa" href="https://www.facebook.com/buscagol/">
+            <i class="fab fa-facebook"></i>
+            <span>Visítanos en Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn-wa" href="mailto:buscagol10@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>Comunícate con nosotros</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn-wa" href="https://play.google.com/store/apps/details?id=pe.com.cricketsoft.buscagolv3">
+            <i class="fas fa-download"></i>
+            <span>Descargar para Android</span>
+          </a>
+          <span class="d-none">Android</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./public/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="./public/bootstrap-4.1.1/js/bootstrap.min.js"></script>
+  <script src="./public/plugins/wow-js/wow.min.js"></script>
+  <script src="./public/plugins/node-waves/waves.min.js"></script>
+  <script src="./public/main.min.js"></script>
+</body>
+</html>
